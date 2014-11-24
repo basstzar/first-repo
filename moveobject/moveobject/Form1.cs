@@ -33,13 +33,13 @@ namespace moveobject
         {
             pictureBox1.Image = Properties.Resources.animated_red_stick;
             timer1.Enabled = true;
-            timer1.Interval = 20;
+            timer1.Interval = 148;
             timer1.Tick += timer1_Tick;
             timer1.Start();
 
             pictureBox2.Image = Properties.Resources.animated_blue_stick;
             timer2.Enabled = true;
-            timer2.Interval = 20;
+            timer2.Interval =150;
             timer2.Tick += timer2_Tick;
             timer2.Start();
 
@@ -50,7 +50,7 @@ namespace moveobject
         private void timer1_Tick(object sender, EventArgs e)
         {
 
-            int r = new Random().Next(1, 12);
+            int r = new Random().Next(1, 15);
             pictureBox1.Left += r;
 
             if ((pictureBox1.Left + pictureBox1.Width) > this.Width)
@@ -84,8 +84,9 @@ namespace moveobject
 
         private void timer2_Tick(object sender, EventArgs e)
         {
+            
 
-            int x = new Random().Next(1,12);
+            int x = new Random().Next(1,15);
             pictureBox2.Left += x;
 
             if ((pictureBox2.Left + pictureBox2.Width) > this.Width)
