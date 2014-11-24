@@ -1,0 +1,15 @@
+"cis149.randolphflee.com" has been added to our hosting system!
+
+Since it takes some time for new DNS information to propagate, it may take up to a few hours for your new subdomain to start working.
+
+Right now no email addresses have been set up yet @cis149.randolphflee.com. You can do that from our "Mail > Manage Email" area at any time.
+
+Within ten minutes the new FTP user glee_cis149 on dodge.dreamhost.com will be created with password qhK8vfxZ ... if you'd like to change the name, shell type, password, quota, or anything else about this user, feel free to do so here!
+
+Also, randolphflee.com must be using our nameservers to work:
+NS1.DREAMHOST.COM            66.33.206.206
+NS2.DREAMHOST.COM            208.97.182.10
+NS3.DREAMHOST.COM            66.33.216.216
+						
+Thanks for choosing us,
+The Happy DreamHost Domain Adding Robot!
