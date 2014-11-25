@@ -1,20 +1,9 @@
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\bin\Debug\moveobject.exe.config
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\bin\Debug\moveobject.exe
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\bin\Debug\moveobject.pdb
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\obj\Debug\moveobject.Form1.resources
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\obj\Debug\moveobject.Properties.Resources.resources
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\obj\Debug\moveobject.csproj.GenerateResource.Cache
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\obj\Debug\moveobject.exe
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\obj\Debug\moveobject.pdb
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\obj\Debug\moveobject.Form2.resources
-C:\Users\GTrain\Desktop\CIS256 - Home\moveobject\moveobject\obj\Debug\moveobject.csprojResolveAssemblyReference.cache
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\bin\Debug\moveobject.exe.config
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\obj\Debug\moveobject.exe
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\obj\Debug\moveobject.pdb
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\bin\Debug\moveobject.exe
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\bin\Debug\moveobject.pdb
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\obj\Debug\moveobject.csprojResolveAssemblyReference.cache
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\obj\Debug\moveobject.Form1.resources
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\obj\Debug\moveobject.Form2.resources
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\obj\Debug\moveobject.Properties.Resources.resources
-C:\Users\GTrain\Desktop\randolphflee\moveobject\moveobject\obj\Debug\moveobject.csproj.GenerateResource.Cache
+C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\bin\Debug\moveobject.exe.config
+C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\bin\Debug\moveobject.exe
+C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\bin\Debug\moveobject.pdb
+C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.Form1.resources
+C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.Form2.resources
+C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.Properties.Resources.resources
+C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.csproj.GenerateResource.Cache
+C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.exe
+C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.pdb
