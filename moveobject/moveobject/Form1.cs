@@ -33,7 +33,7 @@ namespace moveobject
         {
             pictureBox1.Image = Properties.Resources.animated_red_stick;
             timer1.Enabled = true;
-            timer1.Interval = 171;
+            timer1.Interval = 172;
             timer1.Tick += timer1_Tick;
             timer1.Start();
 
