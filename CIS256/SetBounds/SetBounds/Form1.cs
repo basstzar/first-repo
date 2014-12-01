@@ -27,7 +27,8 @@ namespace SetBounds
         private void button1_Click(object sender, EventArgs e)
         {
             this.pictureBox1.Image = global::SetBounds.Properties.Resources.animated_horse;
-            
+            this.pictureBox2.Image = global::SetBounds.Properties.Resources.animated_horse;
+
             while (intStart < intEnd)
             {
                 Random myRan = new Random();
@@ -36,9 +37,15 @@ namespace SetBounds
                 Thread.Sleep(200);
                
                 pictureBox1.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
+                pictureBox2.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
                 this.Refresh();
             }
             this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
+            this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
+
+
+           
+          
             
 
         
@@ -49,7 +56,13 @@ namespace SetBounds
             intEnd = this.Size.Width - 35;
             intStart = 12;
             pictureBox1.SetBounds(11, 42, 0, 0, BoundsSpecified.Location);
+
+            intEnd = this.Size.Width - 35;
+            intStart = 12;
+            pictureBox2.SetBounds(11, 227, 0, 0, BoundsSpecified.Location);
         }
+
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
