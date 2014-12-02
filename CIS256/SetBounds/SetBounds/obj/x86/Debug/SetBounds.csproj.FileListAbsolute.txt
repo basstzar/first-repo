@@ -22,3 +22,5 @@ C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\Se
 C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.Form1.resources
 C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.Properties.Resources.resources
 C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.csproj.GenerateResource.Cache
+C:\Users\GTrain\SetBounds\SetBounds\obj\x86\Debug\SetBounds.exe
+C:\Users\GTrain\SetBounds\SetBounds\obj\x86\Debug\SetBounds.pdb
