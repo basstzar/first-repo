@@ -1,9 +1,0 @@
-C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\bin\Debug\moveobject.exe.config
-C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\bin\Debug\moveobject.exe
-C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\bin\Debug\moveobject.pdb
-C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.Form1.resources
-C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.Form2.resources
-C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.Properties.Resources.resources
-C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.csproj.GenerateResource.Cache
-C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.exe
-C:\Users\RANDOLPHL9417\Desktop\sv\moveobject\moveobject\obj\Debug\moveobject.pdb
