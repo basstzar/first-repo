@@ -19,7 +19,6 @@ C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\Se
 C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\bin\Debug\SetBounds.exe
 C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\bin\Debug\SetBounds.pdb
 C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.csprojResolveAssemblyReference.cache
-C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.Form1.resources
 C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.Properties.Resources.resources
 C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.csproj.GenerateResource.Cache
 C:\Users\GTrain\SetBounds\SetBounds\obj\x86\Debug\SetBounds.exe
@@ -32,3 +31,4 @@ C:\Users\RANDOLPHL9417\Desktop\www\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetB
 C:\Users\RANDOLPHL9417\Desktop\www\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.Form1.resources
 C:\Users\RANDOLPHL9417\Desktop\www\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.Properties.Resources.resources
 C:\Users\RANDOLPHL9417\Desktop\www\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.csproj.GenerateResource.Cache
+C:\Users\GTrain\Desktop\randolphflee\CIS256\SetBounds\SetBounds\obj\x86\Debug\SetBounds.frmHorseRace.resources

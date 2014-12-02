@@ -12,7 +12,7 @@ using System.Diagnostics;
 
 namespace SetBounds
 {
-    public partial class Form1 : Form
+    public partial class frmHorseRace : Form
     {
         int intStart = 12;
         int intEnd = 835;
@@ -21,10 +21,9 @@ namespace SetBounds
 
         double csharp, ruby, python;
         Random myRan = new Random();
-        Random myRan2 = new Random();
-        Random myRan3 = new Random();
+       
 
-        public Form1()
+        public frmHorseRace()
         {
             InitializeComponent();
         }
@@ -68,7 +67,7 @@ namespace SetBounds
 
                 var sw2 = Stopwatch.StartNew();
               
-                int myMove2 = myRan2.Next(0, 20);
+                int myMove2 = myRan.Next(0, 20);
                 intStart = intStart + myMove2;
                 Thread.Sleep(50);
                 ruby = sw2.Elapsed.TotalMilliseconds;
@@ -94,7 +93,7 @@ namespace SetBounds
 
                 var sw3 = Stopwatch.StartNew();
                
-                int myMove3 = myRan3.Next(0, 20);
+                int myMove3 = myRan.Next(0, 20);
                 intStart = intStart + myMove3;
                 Thread.Sleep(50);
                 python = sw3.Elapsed.TotalMilliseconds;
