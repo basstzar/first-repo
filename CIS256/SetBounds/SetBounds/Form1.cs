@@ -17,7 +17,7 @@ namespace SetBounds
         int intStart = 12;
         int intEnd = 835;
         int csharpWins, rubyWins, pythonWins;
-        bool csharpPhoto, rubyPhoto, pythonPhoto;
+        bool csharpPhoto = false, rubyPhoto=false, pythonPhoto=false;
 
         double csharp, ruby, python;
 
@@ -93,7 +93,7 @@ namespace SetBounds
                 Random myRan3 = new Random();
                 int myMove3 = myRan3.Next(0, 23);
                 intStart = intStart + myMove3;
-                Thread.Sleep(32);
+                Thread.Sleep(33);
                 python = sw3.Elapsed.TotalMilliseconds;
                 lblPythontime.Text = ruby.ToString();
                
@@ -111,16 +111,15 @@ namespace SetBounds
                     pythonWins += 1;
                     lblPythonwins.Text = pythonWins.ToString();
                     pythonPhoto = true;
-                     else
-                    {if((csharpPhoto = true) &&( rubyPhoto=true) && (pythonPhoto=true))
-                     MessageBox.Show("Photo Finish"); }
 
+                    if (csharpPhoto == true && rubyPhoto == true && pythonPhoto == true)
+                    { MessageBox.Show("Photo Finish!"); }
                     break;
-                   
+
                     
                 }
 
-
+               
                 
             }
             
