@@ -29,7 +29,7 @@ namespace SetBounds
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.pictureBox1.Image = global::SetBounds.Properties.Resources.animated_horse;
+            this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_animated_horse;
             this.pictureBox2.Image = global::SetBounds.Properties.Resources.animated_horse;
             this.pictureBox3.Image = global::SetBounds.Properties.Resources.animated_horse;
             
