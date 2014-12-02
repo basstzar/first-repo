@@ -20,6 +20,9 @@ namespace SetBounds
         bool csharpPhoto = false, rubyPhoto=false, pythonPhoto=false;
 
         double csharp, ruby, python;
+        Random myRan = new Random();
+        Random myRan2 = new Random();
+        Random myRan3 = new Random();
 
         public Form1()
         {
@@ -39,7 +42,7 @@ namespace SetBounds
                
             
              
-                Random myRan = new Random();
+                
                 int myMove = myRan.Next(0, 20);
                 intStart = intStart + myMove;
                 Thread.Sleep(50);
@@ -64,10 +67,10 @@ namespace SetBounds
                 }
 
                 var sw2 = Stopwatch.StartNew();
-                Random myRan2 = new Random();
+              
                 int myMove2 = myRan2.Next(0, 20);
                 intStart = intStart + myMove2;
-                Thread.Sleep(46);
+                Thread.Sleep(50);
                 ruby = sw2.Elapsed.TotalMilliseconds;
                 lblRubytime.Text = ruby.ToString();
                
@@ -90,10 +93,10 @@ namespace SetBounds
 
 
                 var sw3 = Stopwatch.StartNew();
-                Random myRan3 = new Random();
-                int myMove3 = myRan3.Next(0, 23);
+               
+                int myMove3 = myRan3.Next(0, 20);
                 intStart = intStart + myMove3;
-                Thread.Sleep(33);
+                Thread.Sleep(50);
                 python = sw3.Elapsed.TotalMilliseconds;
                 lblPythontime.Text = ruby.ToString();
                
