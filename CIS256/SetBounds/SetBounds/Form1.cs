@@ -17,6 +17,7 @@ namespace SetBounds
         int intStart = 12;
         int intEnd = 835;
         int csharpWins, rubyWins, pythonWins;
+        bool csharpPhoto, rubyPhoto, pythonPhoto;
 
         double csharp, ruby, python;
 
@@ -57,6 +58,8 @@ namespace SetBounds
 
                     csharpWins += 1;
                     lblSeesharpiewins.Text = csharpWins.ToString();
+                    csharpPhoto = true;
+                   
                     break;
                 }
 
@@ -64,7 +67,7 @@ namespace SetBounds
                 Random myRan2 = new Random();
                 int myMove2 = myRan2.Next(0, 20);
                 intStart = intStart + myMove2;
-                Thread.Sleep(30);
+                Thread.Sleep(46);
                 ruby = sw2.Elapsed.TotalMilliseconds;
                 lblRubytime.Text = ruby.ToString();
                
@@ -79,6 +82,8 @@ namespace SetBounds
                     MessageBox.Show("Ruby Baby Wins!", "The Winner");
                     rubyWins += 1;
                     lblRubywins.Text = rubyWins.ToString();
+                    rubyPhoto = true;
+                    
                     break;
                 }
 
@@ -86,9 +91,9 @@ namespace SetBounds
 
                 var sw3 = Stopwatch.StartNew();
                 Random myRan3 = new Random();
-                int myMove3 = myRan3.Next(0, 21);
+                int myMove3 = myRan3.Next(0, 23);
                 intStart = intStart + myMove3;
-                Thread.Sleep(45);
+                Thread.Sleep(32);
                 python = sw3.Elapsed.TotalMilliseconds;
                 lblPythontime.Text = ruby.ToString();
                
@@ -105,7 +110,14 @@ namespace SetBounds
                     MessageBox.Show("Python'll Bite Wins!", "The Winner");
                     pythonWins += 1;
                     lblPythonwins.Text = pythonWins.ToString();
+                    pythonPhoto = true;
+                     else
+                    {if((csharpPhoto = true) &&( rubyPhoto=true) && (pythonPhoto=true))
+                     MessageBox.Show("Photo Finish"); }
+
                     break;
+                   
+                    
                 }
 
 

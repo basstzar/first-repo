@@ -120,18 +120,18 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(457, 512);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
+            this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Ruuby:";
+            this.label2.Text = "Ruby Baby:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(580, 512);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
+            this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Python:";
+            this.label3.Text = "Python\'ll Bite:";
             // 
             // lblcsharptime
             // 
@@ -145,7 +145,7 @@
             // lblRubytime
             // 
             this.lblRubytime.AutoSize = true;
-            this.lblRubytime.Location = new System.Drawing.Point(504, 512);
+            this.lblRubytime.Location = new System.Drawing.Point(525, 512);
             this.lblRubytime.Name = "lblRubytime";
             this.lblRubytime.Size = new System.Drawing.Size(13, 13);
             this.lblRubytime.TabIndex = 9;
@@ -154,7 +154,7 @@
             // lblPythontime
             // 
             this.lblPythontime.AutoSize = true;
-            this.lblPythontime.Location = new System.Drawing.Point(629, 512);
+            this.lblPythontime.Location = new System.Drawing.Point(656, 512);
             this.lblPythontime.Name = "lblPythontime";
             this.lblPythontime.Size = new System.Drawing.Size(13, 13);
             this.lblPythontime.TabIndex = 10;
