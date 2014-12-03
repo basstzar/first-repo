@@ -124,13 +124,46 @@
   <data name="csharp_animated_horse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\csharp_animated_horse.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="csharp_lose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csharp_lose.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csharp_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csharp_start.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="csharp_wins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\csharp_wins.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="horse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\horse.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="python_animated_horse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\python_animated_horse.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="python_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\python_start.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="python_wins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\python_wins.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pyton_lose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pyton_lose.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="race_bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\race_bg2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="race_bg3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\race_bg3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruby_animated_horse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ruby_animated_horse.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruby_lose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ruby_lose.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruby_start" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ruby_start.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ruby_wins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ruby_wins.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

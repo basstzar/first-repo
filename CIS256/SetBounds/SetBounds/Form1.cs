@@ -41,8 +41,8 @@ namespace SetBounds
         private void button1_Click(object sender, EventArgs e)
         {
             this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_animated_horse;
-            this.pictureBox2.Image = global::SetBounds.Properties.Resources.animated_horse;
-            this.pictureBox3.Image = global::SetBounds.Properties.Resources.animated_horse;
+            this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_animated_horse;
+            this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_animated_horse;
             pictureBox4.Visible = false;
             
             while (intStart < intEnd)
@@ -57,9 +57,9 @@ namespace SetBounds
                 this.Refresh();
                 if ((pictureBox1.Location.X >= intEnd)&&(pictureBox1.Location.X>pictureBox2.Location.X)&&(pictureBox1.Location.X > pictureBox3.Location.X))
                 {
-                    this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
-                    this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
-                    this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
+                    this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_wins;
+                    this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_lose;
+                    this.pictureBox3.Image = global::SetBounds.Properties.Resources.pyton_lose;
 
                     pictureBox1.Location = new Point(855, 60);
                     pictureBox2.Location = new Point(855, 187);
@@ -90,9 +90,9 @@ namespace SetBounds
                 this.Refresh();
                 if ((pictureBox2.Location.X >= intEnd) && (pictureBox2.Location.X > pictureBox1.Location.X) && (pictureBox2.Location.X > pictureBox3.Location.X))
                 {
-                    this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
-                    this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
-                    this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
+                    this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_lose;
+                    this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_wins;
+                    this.pictureBox3.Image = global::SetBounds.Properties.Resources.pyton_lose;
 
                     pictureBox1.Location = new Point(855, 60);
                     pictureBox2.Location = new Point(855, 187);
@@ -125,10 +125,10 @@ namespace SetBounds
 
                 if ((pictureBox3.Location.X >= intEnd) && (pictureBox3.Location.X > pictureBox2.Location.X) && (pictureBox3.Location.X > pictureBox1.Location.X))
                 {
-                   
-                    this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
-                    this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
-                    this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
+
+                    this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_wins;
+                    this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_lose;
+                    this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_lose;
 
                     pictureBox1.Location = new Point(855, 60);
                     pictureBox2.Location = new Point(855, 187);
@@ -171,13 +171,16 @@ namespace SetBounds
         private void Form1_Load(object sender, EventArgs e)
         {
             pictureBox4.Visible = true;
+            this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_start;
+            this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_start;
+            this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_start;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e )
         {
-            this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
-            this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
-            this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
+            this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_start;
+            this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_start;
+            this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_start;
             csharp = 0;
             ruby = 0;
             python = 0;
@@ -198,10 +201,6 @@ namespace SetBounds
             this.Close();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
 
         private void infoToolStripMenuItem_Click(object sender, EventArgs e)
         {

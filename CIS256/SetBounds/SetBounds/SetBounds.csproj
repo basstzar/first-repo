@@ -95,6 +95,39 @@
   <ItemGroup>
     <None Include="Resources\race_bg3.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\python_start.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\python_wins.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\python_animated_horse.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pyton_lose.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csharp_start.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csharp_lose.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruby_start.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruby_lose.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruby_animated_horse.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\csharp_wins.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruby_wins.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
