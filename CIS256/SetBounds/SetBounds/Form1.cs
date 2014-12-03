@@ -197,5 +197,15 @@ namespace SetBounds
         {
             this.Close();
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This is a desktop application for CIS 256.  All code written by G. Lee");
+        }
     }
 }
