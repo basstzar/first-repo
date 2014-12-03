@@ -93,9 +93,19 @@ namespace SetBounds.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap race_bg {
+        internal static System.Drawing.Bitmap race_bg2 {
             get {
-                object obj = ResourceManager.GetObject("race_bg", resourceCulture);
+                object obj = ResourceManager.GetObject("race_bg2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap race_bg3 {
+            get {
+                object obj = ResourceManager.GetObject("race_bg3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

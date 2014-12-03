@@ -17,9 +17,9 @@ namespace SetBounds
         int intStart = 12;
         int intEnd = 835;
         int csharpWins, rubyWins, pythonWins;
-      
 
         double csharp, ruby, python;
+       
         Random myRan = new Random();
        
 
@@ -28,7 +28,13 @@ namespace SetBounds
 
         {
             InitializeComponent();
-            pictureBox4.Visible = true;
+
+            //To fix BG image flicker
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.DoubleBuffer, true);
+
+           
         }
 
 
@@ -54,8 +60,13 @@ namespace SetBounds
                     this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
                     this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
                     this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
+
+                    pictureBox1.Location = new Point(855, 60);
+                    pictureBox2.Location = new Point(855, 187);
+                    pictureBox3.Location = new Point(855, 311);
                     
                     MessageBox.Show("See Sharpie Wins!", "The Winner");
+
 
                     csharpWins += 1;
                     lblSeesharpiewins.Text = csharpWins.ToString();
@@ -64,8 +75,9 @@ namespace SetBounds
                     break;}
 
                 sw1.Stop();
-                csharp = sw1.Elapsed.Milliseconds;
-                lblcsharptime.Text = csharp.ToString();
+                TimeSpan csharp = sw1.Elapsed;
+                csharp = sw1.Elapsed;
+                lblcsharptime.Text = csharp.TotalMilliseconds.ToString();
 
                 var sw2 = Stopwatch.StartNew();
               
@@ -82,7 +94,15 @@ namespace SetBounds
                     this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
                     this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
 
+                    pictureBox1.Location = new Point(855, 60);
+                    pictureBox2.Location = new Point(855, 187);
+                    pictureBox3.Location = new Point(855, 311);
+
                     MessageBox.Show("Ruby Baby Wins!", "The Winner");
+
+                    
+
+
                     rubyWins += 1;
                     lblRubywins.Text = rubyWins.ToString();
              
@@ -91,8 +111,9 @@ namespace SetBounds
 
 
                 sw2.Stop();
-                ruby = sw2.Elapsed.Milliseconds;
-                lblRubytime.Text = ruby.ToString();
+                TimeSpan ruby = sw2.Elapsed;
+                ruby = sw2.Elapsed;
+                lblRubytime.Text = ruby.TotalMilliseconds.ToString(); 
 
                 var sw3 = Stopwatch.StartNew();
                
@@ -108,26 +129,28 @@ namespace SetBounds
                     this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
                     this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
                     this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
-                   
+
+                    pictureBox1.Location = new Point(855, 60);
+                    pictureBox2.Location = new Point(855, 187);
+                    pictureBox3.Location = new Point(855, 311);
+
                     MessageBox.Show("Python'll Bite Wins!", "The Winner");
+
+                    
+
                     pythonWins += 1;
                     lblPythonwins.Text = pythonWins.ToString();
                 
                     break;}
 
                 sw3.Stop();
-                python = sw3.Elapsed.Milliseconds;
-                lblPythontime.Text = python.ToString();
-                   
-                    
-                
-
-               
-                
+                TimeSpan python = sw3.Elapsed;
+                python = sw3.Elapsed;
+                lblPythontime.Text = (python.TotalMilliseconds).ToString();
+                           
             }
             
-           
-        
+         
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -147,7 +170,7 @@ namespace SetBounds
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            pictureBox4.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -158,6 +181,8 @@ namespace SetBounds
             csharp = 0;
             ruby = 0;
             python = 0;
+         
+           
             intStart = 11;
             pictureBox1.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
             pictureBox2.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
@@ -165,6 +190,12 @@ namespace SetBounds
             lblcsharptime.Text = csharp.ToString();
             lblPythontime.Text = python.ToString();
             lblRubytime.Text = ruby.ToString();
+            pictureBox4.Visible = true;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
