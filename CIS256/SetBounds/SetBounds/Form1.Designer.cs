@@ -46,6 +46,7 @@
             this.lblRubywins = new System.Windows.Forms.Label();
             this.l = new System.Windows.Forms.Label();
             this.lblPythonwins = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -111,9 +112,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(310, 512);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 5;
-            this.label1.Text = "CeeSharpie:";
+            this.label1.Text = "See Sharpie:";
             // 
             // label2
             // 
@@ -224,12 +225,22 @@
             this.lblPythonwins.TabIndex = 17;
             this.lblPythonwins.Text = "0";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(135, 479);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "label6";
+            // 
             // frmHorseRace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1032, 550);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.lblPythonwins);
             this.Controls.Add(this.l);
             this.Controls.Add(this.lblRubywins);
@@ -281,6 +292,8 @@
         private System.Windows.Forms.Label lblRubywins;
         private System.Windows.Forms.Label l;
         private System.Windows.Forms.Label lblPythonwins;
+        private System.Windows.Forms.Label label6;
+        
     }
 }
 

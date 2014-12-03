@@ -17,13 +17,15 @@ namespace SetBounds
         int intStart = 12;
         int intEnd = 835;
         int csharpWins, rubyWins, pythonWins;
-        bool csharpPhoto = false, rubyPhoto=false, pythonPhoto=false;
+      
 
         double csharp, ruby, python;
         Random myRan = new Random();
        
 
         public frmHorseRace()
+
+
         {
             InitializeComponent();
         }
@@ -38,19 +40,14 @@ namespace SetBounds
             while (intStart < intEnd)
             {
                 var sw1 = Stopwatch.StartNew();
-               
-            
-             
-                
+                               
                 int myMove = myRan.Next(0, 20);
                 intStart = intStart + myMove;
-                Thread.Sleep(50);
-                csharp = sw1.Elapsed.TotalMilliseconds;
-                lblcsharptime.Text = csharp.ToString();
-                
+                Thread.Sleep(100);
+                               
                 pictureBox1.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
                 this.Refresh();
-                if (pictureBox1.Location.X > intEnd && pictureBox3.Location.X < intEnd && pictureBox2.Location.X < intEnd)
+                if ((pictureBox1.Location.X >= intEnd)&&(pictureBox1.Location.X>pictureBox2.Location.X)&&(pictureBox1.Location.X > pictureBox3.Location.X))
                 {
                     this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
                     this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
@@ -60,22 +57,24 @@ namespace SetBounds
 
                     csharpWins += 1;
                     lblSeesharpiewins.Text = csharpWins.ToString();
-                    csharpPhoto = true;
+                  
                    
-                    break;
-                }
+                    break;}
+
+                sw1.Stop();
+                csharp = sw1.Elapsed.Milliseconds;
+                lblcsharptime.Text = csharp.ToString();
 
                 var sw2 = Stopwatch.StartNew();
               
                 int myMove2 = myRan.Next(0, 20);
                 intStart = intStart + myMove2;
-                Thread.Sleep(50);
-                ruby = sw2.Elapsed.TotalMilliseconds;
-                lblRubytime.Text = ruby.ToString();
+                Thread.Sleep(100);
+                
                
                 pictureBox2.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
                 this.Refresh();
-                if (pictureBox2.Location.X > intEnd && pictureBox3.Location.X < intEnd && pictureBox1.Location.X < intEnd)
+                if ((pictureBox2.Location.X >= intEnd) && (pictureBox2.Location.X > pictureBox1.Location.X) && (pictureBox2.Location.X > pictureBox3.Location.X))
                 {
                     this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
                     this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
@@ -84,50 +83,48 @@ namespace SetBounds
                     MessageBox.Show("Ruby Baby Wins!", "The Winner");
                     rubyWins += 1;
                     lblRubywins.Text = rubyWins.ToString();
-                    rubyPhoto = true;
+             
                     
-                    break;
-                }
+                    break;}
 
 
+                sw2.Stop();
+                ruby = sw2.Elapsed.Milliseconds;
+                lblRubytime.Text = ruby.ToString();
 
                 var sw3 = Stopwatch.StartNew();
                
                 int myMove3 = myRan.Next(0, 20);
                 intStart = intStart + myMove3;
-                Thread.Sleep(50);
-                python = sw3.Elapsed.TotalMilliseconds;
-                lblPythontime.Text = ruby.ToString();
-               
-
+                Thread.Sleep(100);
                 pictureBox3.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
                 this.Refresh();
 
-                if (pictureBox3.Location.X > intEnd && pictureBox1.Location.X < intEnd && pictureBox2.Location.X < intEnd)
+                if ((pictureBox3.Location.X >= intEnd) && (pictureBox3.Location.X > pictureBox2.Location.X) && (pictureBox3.Location.X > pictureBox1.Location.X))
                 {
+                   
                     this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
                     this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
                     this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
-                    sw3.Stop();
+                   
                     MessageBox.Show("Python'll Bite Wins!", "The Winner");
                     pythonWins += 1;
                     lblPythonwins.Text = pythonWins.ToString();
-                    pythonPhoto = true;
+                
+                    break;}
 
-                    if (csharpPhoto == true && rubyPhoto == true && pythonPhoto == true)
-                    { MessageBox.Show("Photo Finish!"); }
-                    break;
-
+                sw3.Stop();
+                python = sw3.Elapsed.Milliseconds;
+                lblPythontime.Text = python.ToString();
+                   
                     
-                }
+                
 
                
                 
             }
             
-            //this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
-            //this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
-            //this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
+           
         
         }
 
