@@ -28,6 +28,7 @@ namespace SetBounds
 
         {
             InitializeComponent();
+            pictureBox4.Visible = true;
         }
 
 
@@ -36,6 +37,7 @@ namespace SetBounds
             this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_animated_horse;
             this.pictureBox2.Image = global::SetBounds.Properties.Resources.animated_horse;
             this.pictureBox3.Image = global::SetBounds.Properties.Resources.animated_horse;
+            pictureBox4.Visible = false;
             
             while (intStart < intEnd)
             {
