@@ -17,8 +17,7 @@ namespace SetBounds
         int intStart = 12;
         int intEnd = 835;
         int csharpWins, rubyWins, pythonWins;
-
-        double csharp, ruby, python;
+        double csharp, ruby, python, bets, totBalance;
        
         Random myRan = new Random();
        
@@ -40,6 +39,7 @@ namespace SetBounds
 
         private void button1_Click(object sender, EventArgs e)
         {
+            txtBetamt.Enabled = false;
             this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_animated_horse;
             this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_animated_horse;
             this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_animated_horse;
@@ -57,6 +57,7 @@ namespace SetBounds
                 this.Refresh();
                 if ((pictureBox1.Location.X >= intEnd)&&(pictureBox1.Location.X>pictureBox2.Location.X)&&(pictureBox1.Location.X > pictureBox3.Location.X))
                 {
+                    
                     this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_wins;
                     this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_lose;
                     this.pictureBox3.Image = global::SetBounds.Properties.Resources.pyton_lose;
@@ -70,8 +71,8 @@ namespace SetBounds
 
                     csharpWins += 1;
                     lblSeesharpiewins.Text = csharpWins.ToString();
-                  
-                   
+
+                    csharpBet();
                     break;}
 
                 sw1.Stop();
@@ -90,6 +91,7 @@ namespace SetBounds
                 this.Refresh();
                 if ((pictureBox2.Location.X >= intEnd) && (pictureBox2.Location.X > pictureBox1.Location.X) && (pictureBox2.Location.X > pictureBox3.Location.X))
                 {
+                    
                     this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_lose;
                     this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_wins;
                     this.pictureBox3.Image = global::SetBounds.Properties.Resources.pyton_lose;
@@ -105,8 +107,8 @@ namespace SetBounds
 
                     rubyWins += 1;
                     lblRubywins.Text = rubyWins.ToString();
-             
-                    
+
+                    rubyBet();
                     break;}
 
 
@@ -125,6 +127,7 @@ namespace SetBounds
 
                 if ((pictureBox3.Location.X >= intEnd) && (pictureBox3.Location.X > pictureBox2.Location.X) && (pictureBox3.Location.X > pictureBox1.Location.X))
                 {
+                  
 
                     this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_wins;
                     this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_lose;
@@ -140,7 +143,8 @@ namespace SetBounds
 
                     pythonWins += 1;
                     lblPythonwins.Text = pythonWins.ToString();
-                
+
+                    pythonBet();
                     break;}
 
                 sw3.Stop();
@@ -174,6 +178,10 @@ namespace SetBounds
             this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_start;
             this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_start;
             this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_start;
+
+            txtBetamt.Focus();
+
+            
         }
 
         private void button2_Click(object sender, EventArgs e )
@@ -194,6 +202,11 @@ namespace SetBounds
             lblPythontime.Text = python.ToString();
             lblRubytime.Text = ruby.ToString();
             pictureBox4.Visible = true;
+
+            txtBetamt.Clear();
+            txtBetamt.Focus();
+            txtBetamt.Enabled = true;  
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -206,5 +219,133 @@ namespace SetBounds
         {
             MessageBox.Show("This is a desktop application for CIS 256.  All code written by G. Lee");
         }
+
+        
+
+        private void txtBetamt_MouseEnter(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.txtBetamt, "Bets may be up to $100 or your total balance");
+        }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.pictureBox1, "See Sharpie - A staple of the .Net house");
+        }
+
+        private void pictureBox2_MouseHover(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.pictureBox2, "Ruby Baby - She's fast and smooth");
+        }
+
+        private void pictureBox3_MouseHover(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.pictureBox3, "Python'll Bite - Lean and quick");
+        }
+
+        private void csharpBet()
+        { 
+            bets = double.Parse(txtBetamt.Text);
+            betRunbal = 100;
+            
+            if (radCsharp.Checked==true)
+            {
+              
+
+                betRunbal += bets;
+
+                lblBalance.Text = betRunbal.ToString("c");
+
+
+            }
+
+            else
+            {
+                betRunbal -= bets;
+                lblBalance.Text = betRunbal.ToString("c");
+
+            }
+
+        }
+
+        private void rubyBet()
+        {
+            bets = double.Parse(txtBetamt.Text);
+            betRunbal = 100;
+
+            if (radRuby.Checked == true)
+            {
+               
+
+                betRunbal += bets;
+
+                lblBalance.Text = betRunbal.ToString("c");
+
+
+            }
+
+            else
+            {
+                betRunbal -= bets;
+                lblBalance.Text = betRunbal.ToString("c");
+
+            }
+
+        }
+
+        private void pythonBet()
+        {
+            bets = double.Parse(txtBetamt.Text);
+            betRunbal = 100;
+
+            if (radPython.Checked == true)
+            {
+               
+
+                betRunbal += bets;
+
+                lblBalance.Text = betRunbal.ToString("c");
+               
+
+            }
+
+            else
+            {
+                betRunbal -= bets;
+                lblBalance.Text = betRunbal.ToString("c");
+               
+            }
+
+        }
+
+
+            
+       
+
+        private void radCsharp_MouseEnter(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.radCsharp, "Pick See Sharpie to win!");
+        }
+
+         
+
+        private void radRuby_MouseEnter_1(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.radRuby, "Pick Ruby Baby to win!");
+        }
+
+        private void radPython_MouseEnter(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.radPython, "Pick Python'll Bite to win!");
+        }
+
+       
+        
     }
 }
