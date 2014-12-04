@@ -17,7 +17,7 @@ namespace SetBounds
         int intStart = 12;
         int intEnd = 835;
         int csharpWins, rubyWins, pythonWins;
-        double csharp, ruby, python, bets, totBalance;
+        double csharp, ruby, python, bets, totBalance = 100;
        
         Random myRan = new Random();
        
@@ -249,23 +249,22 @@ namespace SetBounds
         private void csharpBet()
         { 
             bets = double.Parse(txtBetamt.Text);
-            betRunbal = 100;
+           
             
             if (radCsharp.Checked==true)
             {
               
 
-                betRunbal += bets;
-
-                lblBalance.Text = betRunbal.ToString("c");
+                totBalance += bets;
+                lblBalance.Text = totBalance.ToString("c");
 
 
             }
 
             else
             {
-                betRunbal -= bets;
-                lblBalance.Text = betRunbal.ToString("c");
+                totBalance -= bets;
+                lblBalance.Text = totBalance.ToString("c");
 
             }
 
@@ -274,49 +273,48 @@ namespace SetBounds
         private void rubyBet()
         {
             bets = double.Parse(txtBetamt.Text);
-            betRunbal = 100;
+          
 
             if (radRuby.Checked == true)
-            {
-               
+             {
+              
 
-                betRunbal += bets;
-
-                lblBalance.Text = betRunbal.ToString("c");
+                totBalance += bets;
+                lblBalance.Text = totBalance.ToString("c");
 
 
             }
 
             else
             {
-                betRunbal -= bets;
-                lblBalance.Text = betRunbal.ToString("c");
+                totBalance -= bets;
+                lblBalance.Text = totBalance.ToString("c");
 
             }
+           
 
         }
 
         private void pythonBet()
         {
             bets = double.Parse(txtBetamt.Text);
-            betRunbal = 100;
+           
 
             if (radPython.Checked == true)
             {
-               
 
-                betRunbal += bets;
 
-                lblBalance.Text = betRunbal.ToString("c");
-               
+                totBalance += bets;
+                lblBalance.Text = totBalance.ToString("c");
+
 
             }
 
             else
             {
-                betRunbal -= bets;
-                lblBalance.Text = betRunbal.ToString("c");
-               
+                totBalance -= bets;
+                lblBalance.Text = totBalance.ToString("c");
+
             }
 
         }
