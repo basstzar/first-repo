@@ -83,7 +83,7 @@ namespace SetBounds
                    
 
 
-                    csharpBet();
+               
                     break;}
 
                 sw1.Stop();
@@ -126,7 +126,7 @@ namespace SetBounds
                     }
                     
 
-                    rubyBet();
+                  
                     break;}
 
 
