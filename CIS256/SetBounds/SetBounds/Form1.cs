@@ -44,6 +44,8 @@ namespace SetBounds
             this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_animated_horse;
             this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_animated_horse;
             pictureBox4.Visible = false;
+
+           
             
             while (intStart < intEnd)
             {
@@ -71,6 +73,15 @@ namespace SetBounds
 
                     csharpWins += 1;
                     lblSeesharpiewins.Text = csharpWins.ToString();
+                    if (ckBets.Checked == true)
+                    {
+                       
+                        csharpBet();
+                    }
+                   
+
+                   
+
 
                     csharpBet();
                     break;}
@@ -108,6 +119,13 @@ namespace SetBounds
                     rubyWins += 1;
                     lblRubywins.Text = rubyWins.ToString();
 
+                    if (ckBets.Checked == true)
+                    {
+                      
+                        rubyBet();
+                    }
+                    
+
                     rubyBet();
                     break;}
 
@@ -144,7 +162,13 @@ namespace SetBounds
                     pythonWins += 1;
                     lblPythonwins.Text = pythonWins.ToString();
 
-                    pythonBet();
+                    if (ckBets.Checked == true)
+                    { 
+                      
+                        pythonBet();
+                    }
+                    
+                   
                     break;}
 
                 sw3.Stop();
@@ -181,11 +205,14 @@ namespace SetBounds
 
             txtBetamt.Focus();
 
+           
+            { groupBox1.Enabled = false; }
             
         }
 
         private void button2_Click(object sender, EventArgs e )
         {
+           
             this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_start;
             this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_start;
             this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_start;
@@ -205,7 +232,9 @@ namespace SetBounds
 
             txtBetamt.Clear();
             txtBetamt.Focus();
-            txtBetamt.Enabled = true;  
+            txtBetamt.Enabled = true;
+            ckBets.Checked = false;
+            
 
         }
 
@@ -249,9 +278,10 @@ namespace SetBounds
         private void csharpBet()
         { 
             bets = double.Parse(txtBetamt.Text);
-           
+            
             
             if (radCsharp.Checked==true)
+              
             {
               
 
@@ -267,6 +297,9 @@ namespace SetBounds
                 lblBalance.Text = totBalance.ToString("c");
 
             }
+
+            if (totBalance <= 0)
+            { MessageBox.Show("Sorry, you've gone bust"); }
 
         }
 
@@ -291,8 +324,9 @@ namespace SetBounds
                 lblBalance.Text = totBalance.ToString("c");
 
             }
-           
 
+            if (totBalance <= 0)
+            { MessageBox.Show("Sorry, you've gone bust"); }
         }
 
         private void pythonBet()
@@ -316,7 +350,8 @@ namespace SetBounds
                 lblBalance.Text = totBalance.ToString("c");
 
             }
-
+            if(totBalance <=0 )
+            {MessageBox.Show("Sorry, you've gone bust");}
         }
 
 
@@ -343,7 +378,24 @@ namespace SetBounds
             ToolTip1.SetToolTip(this.radPython, "Pick Python'll Bite to win!");
         }
 
+        private void ckBets_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckBets.Checked == true)
+            {
+                groupBox1.Enabled = true;
+
+            }
+            else
+            {
+                groupBox1.Enabled = false;
+            }
+        }
+
        
+            
+       
+
+      
         
     }
 }
