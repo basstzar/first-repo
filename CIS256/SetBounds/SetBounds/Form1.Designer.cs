@@ -36,9 +36,9 @@
             this.lblcsharptime = new System.Windows.Forms.Label();
             this.lblRubytime = new System.Windows.Forms.Label();
             this.lblPythontime = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pythonavatar = new System.Windows.Forms.PictureBox();
+            this.rubyavatar = new System.Windows.Forms.PictureBox();
+            this.csharpavatar = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -63,12 +63,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtBetamt = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.ckBets = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pythonavatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rubyavatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.csharpavatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -168,41 +168,41 @@
             this.lblPythontime.TabIndex = 10;
             this.lblPythontime.Text = "0";
             // 
-            // pictureBox3
+            // pythonavatar
             // 
-            this.pictureBox3.Image = global::SetBounds.Properties.Resources.horse;
-            this.pictureBox3.Location = new System.Drawing.Point(11, 311);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(135, 101);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.MouseHover += new System.EventHandler(this.pictureBox3_MouseHover);
+            this.pythonavatar.Image = global::SetBounds.Properties.Resources.horse;
+            this.pythonavatar.Location = new System.Drawing.Point(11, 311);
+            this.pythonavatar.Margin = new System.Windows.Forms.Padding(2);
+            this.pythonavatar.Name = "pythonavatar";
+            this.pythonavatar.Size = new System.Drawing.Size(135, 101);
+            this.pythonavatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pythonavatar.TabIndex = 3;
+            this.pythonavatar.TabStop = false;
+            this.pythonavatar.MouseHover += new System.EventHandler(this.pictureBox3_MouseHover);
             // 
-            // pictureBox2
+            // rubyavatar
             // 
-            this.pictureBox2.Image = global::SetBounds.Properties.Resources.horse;
-            this.pictureBox2.Location = new System.Drawing.Point(11, 187);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(135, 101);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 2;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.MouseHover += new System.EventHandler(this.pictureBox2_MouseHover);
+            this.rubyavatar.Image = global::SetBounds.Properties.Resources.horse;
+            this.rubyavatar.Location = new System.Drawing.Point(11, 187);
+            this.rubyavatar.Margin = new System.Windows.Forms.Padding(2);
+            this.rubyavatar.Name = "rubyavatar";
+            this.rubyavatar.Size = new System.Drawing.Size(135, 101);
+            this.rubyavatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.rubyavatar.TabIndex = 2;
+            this.rubyavatar.TabStop = false;
+            this.rubyavatar.MouseHover += new System.EventHandler(this.pictureBox2_MouseHover);
             // 
-            // pictureBox1
+            // csharpavatar
             // 
-            this.pictureBox1.Image = global::SetBounds.Properties.Resources.horse;
-            this.pictureBox1.Location = new System.Drawing.Point(11, 60);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 107);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
+            this.csharpavatar.Image = global::SetBounds.Properties.Resources.horse;
+            this.csharpavatar.Location = new System.Drawing.Point(11, 60);
+            this.csharpavatar.Margin = new System.Windows.Forms.Padding(2);
+            this.csharpavatar.Name = "csharpavatar";
+            this.csharpavatar.Size = new System.Drawing.Size(135, 107);
+            this.csharpavatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.csharpavatar.TabIndex = 1;
+            this.csharpavatar.TabStop = false;
+            this.csharpavatar.MouseHover += new System.EventHandler(this.pictureBox1_MouseHover);
             // 
             // pictureBox4
             // 
@@ -468,16 +468,6 @@
             this.groupBox2.TabIndex = 11;
             this.groupBox2.TabStop = false;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.DarkGreen;
-            this.label6.Location = new System.Drawing.Point(6, 11);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(77, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Wanna Bet?";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -498,6 +488,16 @@
             this.ckBets.TabIndex = 11;
             this.ckBets.UseVisualStyleBackColor = true;
             this.ckBets.CheckedChanged += new System.EventHandler(this.ckBets_CheckedChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.DarkGreen;
+            this.label6.Location = new System.Drawing.Point(6, 11);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(77, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Wanna Bet?";
             // 
             // frmHorseRace
             // 
@@ -527,9 +527,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnNewrace);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pythonavatar);
+            this.Controls.Add(this.rubyavatar);
+            this.Controls.Add(this.csharpavatar);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -540,9 +540,9 @@
             this.Text = "SCC Downs";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.Form1_Resize);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pythonavatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rubyavatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.csharpavatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.menuStrip1.ResumeLayout(false);
@@ -559,9 +559,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox csharpavatar;
+        private System.Windows.Forms.PictureBox rubyavatar;
+        private System.Windows.Forms.PictureBox pythonavatar;
         private System.Windows.Forms.Button btnNewrace;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

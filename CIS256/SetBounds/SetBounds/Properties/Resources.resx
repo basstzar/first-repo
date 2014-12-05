@@ -133,6 +133,18 @@
   <data name="csharp_wins" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\csharp_wins.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="final_project_chsarp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\final_project_chsarp.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="final_project_python" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\final_project_python.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="final_project_ruby" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\final_project_ruby.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="final_project_they_re_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\final_project_they're_off.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="horse" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\horse.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

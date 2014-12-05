@@ -128,6 +128,18 @@
   <ItemGroup>
     <None Include="Resources\ruby_wins.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final_project_they%27re_off.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final_project_chsarp.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final_project_python.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\final_project_ruby.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

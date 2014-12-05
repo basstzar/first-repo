@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 using System.Diagnostics;
+using System.Media;
 
 
 namespace SetBounds
@@ -32,7 +33,7 @@ namespace SetBounds
             SetStyle(ControlStyles.UserPaint, true);
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             SetStyle(ControlStyles.DoubleBuffer, true);
-
+           
            
         }
 
@@ -40,33 +41,41 @@ namespace SetBounds
         private void button1_Click(object sender, EventArgs e)
         {
             txtBetamt.Enabled = false;
-            this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_animated_horse;
-            this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_animated_horse;
-            this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_animated_horse;
+            this.csharpavatar.Image = global::SetBounds.Properties.Resources.csharp_animated_horse;
+            this.rubyavatar.Image = global::SetBounds.Properties.Resources.ruby_animated_horse;
+            this.pythonavatar.Image = global::SetBounds.Properties.Resources.python_animated_horse;
             pictureBox4.Visible = false;
 
+            SoundPlayer player = new SoundPlayer(Properties.Resources.final_project_they_re_off);
+            player.Play();
+
            
-            
+
             while (intStart < intEnd)
             {
                 var sw1 = Stopwatch.StartNew();
                                
                 int myMove = myRan.Next(0, 20);
                 intStart = intStart + myMove;
-                Thread.Sleep(100);
+                Thread.Sleep(102);
                                
-                pictureBox1.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
+                csharpavatar.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
                 this.Refresh();
-                if ((pictureBox1.Location.X >= intEnd)&&(pictureBox1.Location.X>pictureBox2.Location.X)&&(pictureBox1.Location.X > pictureBox3.Location.X))
+                if ((csharpavatar.Location.X >= intEnd)&&(csharpavatar.Location.X>rubyavatar.Location.X)&&(csharpavatar.Location.X > pythonavatar.Location.X))
                 {
                     
-                    this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_wins;
-                    this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_lose;
-                    this.pictureBox3.Image = global::SetBounds.Properties.Resources.pyton_lose;
+                    this.csharpavatar.Image = global::SetBounds.Properties.Resources.csharp_wins;
+                    this.rubyavatar.Image = global::SetBounds.Properties.Resources.ruby_lose;
+                    this.pythonavatar.Image = global::SetBounds.Properties.Resources.pyton_lose;
 
-                    pictureBox1.Location = new Point(855, 60);
-                    pictureBox2.Location = new Point(855, 187);
-                    pictureBox3.Location = new Point(855, 311);
+                    SoundPlayer player1 = new SoundPlayer(Properties.Resources.final_project_chsarp);
+                    player1.Play();
+
+                    
+
+                    csharpavatar.Location = new Point(855, 60);
+                    rubyavatar.Location = new Point(855, 187);
+                    pythonavatar.Location = new Point(855, 311);
                     
                     MessageBox.Show("See Sharpie Wins!", "The Winner");
 
@@ -79,9 +88,6 @@ namespace SetBounds
                         csharpBet();
                     }
                    
-
-                   
-
 
                
                     break;}
@@ -98,18 +104,23 @@ namespace SetBounds
                 Thread.Sleep(100);
                 
                
-                pictureBox2.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
+                rubyavatar.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
                 this.Refresh();
-                if ((pictureBox2.Location.X >= intEnd) && (pictureBox2.Location.X > pictureBox1.Location.X) && (pictureBox2.Location.X > pictureBox3.Location.X))
+                if ((rubyavatar.Location.X >= intEnd) && (rubyavatar.Location.X > csharpavatar.Location.X) && (rubyavatar.Location.X > pythonavatar.Location.X))
                 {
                     
-                    this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_lose;
-                    this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_wins;
-                    this.pictureBox3.Image = global::SetBounds.Properties.Resources.pyton_lose;
+                    this.csharpavatar.Image = global::SetBounds.Properties.Resources.csharp_lose;
+                    this.rubyavatar.Image = global::SetBounds.Properties.Resources.ruby_wins;
+                    this.pythonavatar.Image = global::SetBounds.Properties.Resources.pyton_lose;
 
-                    pictureBox1.Location = new Point(855, 60);
-                    pictureBox2.Location = new Point(855, 187);
-                    pictureBox3.Location = new Point(855, 311);
+                    csharpavatar.Location = new Point(855, 60);
+                    rubyavatar.Location = new Point(855, 187);
+                    pythonavatar.Location = new Point(855, 311);
+
+                    SoundPlayer player2 = new SoundPlayer(Properties.Resources.final_project_ruby);
+                    player2.Play();
+
+                   
 
                     MessageBox.Show("Ruby Baby Wins!", "The Winner");
 
@@ -140,21 +151,26 @@ namespace SetBounds
                 int myMove3 = myRan.Next(0, 20);
                 intStart = intStart + myMove3;
                 Thread.Sleep(100);
-                pictureBox3.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
+                pythonavatar.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
                 this.Refresh();
 
-                if ((pictureBox3.Location.X >= intEnd) && (pictureBox3.Location.X > pictureBox2.Location.X) && (pictureBox3.Location.X > pictureBox1.Location.X))
+                if ((pythonavatar.Location.X >= intEnd) && (pythonavatar.Location.X > rubyavatar.Location.X) && (pythonavatar.Location.X > csharpavatar.Location.X))
                 {
                   
 
-                    this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_wins;
-                    this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_lose;
-                    this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_lose;
+                    this.pythonavatar.Image = global::SetBounds.Properties.Resources.python_wins;
+                    this.rubyavatar.Image = global::SetBounds.Properties.Resources.ruby_lose;
+                    this.csharpavatar.Image = global::SetBounds.Properties.Resources.csharp_lose;
 
-                    pictureBox1.Location = new Point(855, 60);
-                    pictureBox2.Location = new Point(855, 187);
-                    pictureBox3.Location = new Point(855, 311);
+                    csharpavatar.Location = new Point(855, 60);
+                    rubyavatar.Location = new Point(855, 187);
+                    pythonavatar.Location = new Point(855, 311);
 
+                    SoundPlayer player3 = new SoundPlayer(Properties.Resources.final_project_python);
+                    player3.Play();
+
+                   
+                     
                     MessageBox.Show("Python'll Bite Wins!", "The Winner");
 
                     
@@ -185,46 +201,48 @@ namespace SetBounds
         {
             intEnd = this.Size.Width - 80;
             intStart = 12;
-            pictureBox1.SetBounds(11, 42, 0, 0, BoundsSpecified.Location);
+            csharpavatar.SetBounds(11, 42, 0, 0, BoundsSpecified.Location);
 
             intEnd = this.Size.Width - 80;
             intStart = 12;
-            pictureBox2.SetBounds(11, 230, 0, 0, BoundsSpecified.Location);
+            rubyavatar.SetBounds(11, 230, 0, 0, BoundsSpecified.Location);
 
             intEnd = this.Size.Width - 80;
             intStart = 12;
-            pictureBox3.SetBounds(11, 505, 0, 0, BoundsSpecified.Location);
+            pythonavatar.SetBounds(11, 505, 0, 0, BoundsSpecified.Location);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             pictureBox4.Visible = true;
-            this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_start;
-            this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_start;
-            this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_start;
+            this.pythonavatar.Image = global::SetBounds.Properties.Resources.python_start;
+            this.csharpavatar.Image = global::SetBounds.Properties.Resources.csharp_start;
+            this.rubyavatar.Image = global::SetBounds.Properties.Resources.ruby_start;
 
             txtBetamt.Focus();
 
            
             { groupBox1.Enabled = false; }
+
+           
             
         }
 
         private void button2_Click(object sender, EventArgs e )
         {
            
-            this.pictureBox1.Image = global::SetBounds.Properties.Resources.csharp_start;
-            this.pictureBox2.Image = global::SetBounds.Properties.Resources.ruby_start;
-            this.pictureBox3.Image = global::SetBounds.Properties.Resources.python_start;
+            this.csharpavatar.Image = global::SetBounds.Properties.Resources.csharp_start;
+            this.rubyavatar.Image = global::SetBounds.Properties.Resources.ruby_start;
+            this.pythonavatar.Image = global::SetBounds.Properties.Resources.python_start;
             csharp = 0;
             ruby = 0;
             python = 0;
          
            
             intStart = 11;
-            pictureBox1.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
-            pictureBox2.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
-            pictureBox3.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
+            csharpavatar.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
+            rubyavatar.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
+            pythonavatar.SetBounds(intStart, 0, 0, 0, BoundsSpecified.X);
             lblcsharptime.Text = csharp.ToString();
             lblPythontime.Text = python.ToString();
             lblRubytime.Text = ruby.ToString();
@@ -234,13 +252,17 @@ namespace SetBounds
             txtBetamt.Focus();
             txtBetamt.Enabled = true;
             ckBets.Checked = false;
-            
 
+           
         }
 
         private void btnExit_Click(object sender, EventArgs e)
         {
+            if (totBalance > 0)
+            { MessageBox.Show("Are you sure you want to quit?  You still have " + totBalance.ToString("c") + " in your betting account"); }
+            
             this.Close();
+            
         }
 
 
@@ -260,19 +282,19 @@ namespace SetBounds
         private void pictureBox1_MouseHover(object sender, EventArgs e)
         {
             System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
-            ToolTip1.SetToolTip(this.pictureBox1, "See Sharpie - A staple of the .Net house");
+            ToolTip1.SetToolTip(this.csharpavatar, "See Sharpie - A staple of the .Net house");
         }
 
         private void pictureBox2_MouseHover(object sender, EventArgs e)
         {
             System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
-            ToolTip1.SetToolTip(this.pictureBox2, "Ruby Baby - She's fast and smooth");
+            ToolTip1.SetToolTip(this.rubyavatar, "Ruby Baby - She's fast and smooth");
         }
 
         private void pictureBox3_MouseHover(object sender, EventArgs e)
         {
             System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
-            ToolTip1.SetToolTip(this.pictureBox3, "Python'll Bite - Lean and quick");
+            ToolTip1.SetToolTip(this.pythonavatar, "Python'll Bite - Lean and quick");
         }
 
         private void csharpBet()
@@ -383,6 +405,7 @@ namespace SetBounds
             if (ckBets.Checked == true)
             {
                 groupBox1.Enabled = true;
+                txtBetamt.Focus();
 
             }
             else
@@ -390,6 +413,8 @@ namespace SetBounds
                 groupBox1.Enabled = false;
             }
         }
+
+        
 
        
             
