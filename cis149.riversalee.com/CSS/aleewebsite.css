@@ -1,0 +1,195 @@
+body {
+	background-color: #FEF2C2;
+    font-family: elephant, Californian FB, New Times Roman, serif;
+	color: #7F4138;	
+    width: inherit; 
+  background: -webkit-linear-gradient(#FEF2C2, #E3BB76, #DC9279); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#FEF2C2, #E3BB76, #DC9279); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FEF2C2, #E3BB76, #DC9279); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#FEF2C2, #E3BB76, #DC9279); /* Standard syntax */
+}
+
+img{border: none;}
+
+#wrapper {
+	min-width: 700px;
+	max-width: 1024px;
+	margin:auto; 
+    color: #7F4138;
+    overflow: hidden;
+    padding-bottom: 100px; /* to fix blank bar in Webkit browsers*/
+    background-color: #FEF2C2;
+  background: -webkit-linear-gradient(#FEF2C2, #E3BB76, #DC9279); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#FEF2C2, #E3BB76, #DC9279); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FEF2C2, #E3BB76, #DC9279); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#FEF2C2, #E3BB76, #DC9279); /* Standard syntax */
+	}
+
+header{
+    background-image: url(css/3SunsetElephantWalk2d.png);
+    background-position: center;
+    margin:auto;
+	color: #464836;
+	font-family: Zapfino, Corsiva Hebrew, Kokonor;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #666;
+    width: 960px;
+    padding-bottom: 2px;
+}
+
+IMG.displayed{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;   
+}
+nav{
+	text-align: center;
+	font-weight: bold;
+    text-emphasis-color:currentColor;
+}
+/*Index Page*/
+#Music{
+    float:left;
+    width: 300px;
+    padding: 20px;
+}
+
+#Art{
+    float: left;
+    width: 300px;
+    padding: 20px;   
+}
+
+#Media{
+    float:right;
+    width: 300px;
+    padding: 20px;
+}
+
+h1{
+	text-align: center;
+    
+}
+h2, h3, h5 {
+    text-align: center;
+    font-family: Zapfino, Corsiva Hebrew, Kokonor;
+}
+
+/* News*/
+#Artistic{
+    float:left;
+    width: 300px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#Upcoming{
+    float:left;
+    width: 300px;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#Musicians{
+    float:left;
+    width: 300px;
+    padding: 10px;
+}
+figure{
+    padding:0;
+    margin:0 auto;
+}
+figcaption{
+   width:100%;
+   min-width: 300px; 
+}
+
+/* Gallery Page*/
+#past {
+    float:left;
+    margin:auto;
+    width:342px;
+    text-align: center;
+    border: 2px 2px 2px;
+    padding-top: 20px;
+  background: -webkit-linear-gradient(#DDA88B, #E3BB76, #DFA078); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#DDA88B, #E3BB76, #DFA078); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#DDA88B, #E3BB76, #DFA078); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#DDA88B, #E3BB76, #DFA078); /* Standard syntax */
+    }
+#past h3, #starring h3, #soon h3{
+    max-height: 35px;
+}
+.addpics{
+    padding-bottom: 10px;
+}
+#starring {
+    float: left;
+    margin:auto;
+    width:341px;
+    text-align: center;
+    border: 2px 2px 2px;
+    padding-top: 20px;
+    overflow: hidden;
+  background: -webkit-linear-gradient(#D1805C, #E3BB76, #DE9C79); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#D1805C, #E3BB76, #DE9C79); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#D1805C, #E3BB76, #DE9C79); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#D1805C, #E3BB76, #DE9C79); /* Standard syntax */
+}
+#sub1, #sub2{
+    float: left;
+    width: 140px;
+    margin-left: 20px;
+    text-align: left;
+}
+#sub1 h5, #sub2 h5{
+    height: 25px;
+}
+#soon{
+    float:right;
+    margin:auto;
+    width:341px;
+    text-align: center;
+    border: 2px 2px 2px;
+    padding-top: 20px;
+  background: -webkit-linear-gradient(#E9C1A1,#E3B977, #E1AE77); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#E9C1A1, #E3B977, #E1AE77); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#E9C1A1,#E3B977, #E1AE77); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#E9C1A1, #E3B977, #E1AE77); /* Standard syntax */
+}
+main p{
+    padding: 5px;
+}
+/* Contact Page*/
+fieldset{
+	border-radius:25px;
+    margin-left: 350px;
+    margin-right: 350px;
+	box-shadow: 3px 3px 3px #424242;
+    text-align: center;
+    text-shadow: 1px 1px 1px #666;
+	}
+legend{
+	border: 2px #3C7CBC;
+	border-radius: 10px;
+	padding:5px;
+    text-shadow: 2px 2px 2px #666;
+	}
+.button{
+	border-radius: 5px;
+	padding:2px;
+	margin-top: 20px;
+    text-shadow: 2px 2px 2px #666;
+	}
+
+footer{
+	text-align: center;
+	font-size: .7em;
+	font-style: italic;
+    padding-top: 25px;
+    float:left;
+    width: 100%;
+}
+
+header, nav, main, footer {display: block;}
